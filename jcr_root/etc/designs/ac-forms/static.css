@@ -1,0 +1,93 @@
+/*
+ * ADOBE CONFIDENTIAL
+ *
+ * Copyright 2015 Adobe Systems Incorporated
+ * All Rights Reserved.
+ *
+ * NOTICE:  All information contained herein is, and remains
+ * the property of Adobe Systems Incorporated and its suppliers,
+ * if any.  The intellectual and technical concepts contained
+ * herein are proprietary to Adobe Systems Incorporated and its
+ * suppliers and may be covered by U.S. and Foreign Patents,
+ * patents in process, and are protected by trade secret or copyright law.
+ * Dissemination of this information or reproduction of this material
+ * is strictly forbidden unless prior written permission is obtained
+ * from Adobe Systems Incorporated.
+ */
+
+/**
+ * CSS to give some basic styles to the sample form page
+ */
+
+body {
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+}
+
+.ac-forms-container {
+    width: 600px;
+    margin: 50px auto;
+    padding: 30px 40px 10px 40px;
+    background-color: #ffffff;
+}
+
+.ac-forms-container .form_row {
+    line-height: normal;
+}
+
+.ac-forms-container .form_leftcollabel {
+    color: #6b6b6b;
+    margin-bottom: 10px;
+    font-weight: normal;
+    font-size: 22px;
+}
+
+.ac-forms-container .form_field_text {
+    background: none;
+    border: 1px solid #e0e0e0;
+    padding: 10px;
+    display: block;
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: #7c7c7c;
+    font-size: 16px;
+    transition: box-shadow 0.3s, border 0.3s;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.ac-forms-container .section {
+    padding: 0;
+    margin-bottom: 20px;
+    line-height: normal;
+}
+
+.ac-forms-container .submit.section .form_leftcollabel {
+    display: none;
+}
+
+.ac-forms-container .form_field_text:focus {
+    border: solid 1px #b7b7b7;
+    box-shadow: 0 0 5px 1px #afafaf;
+    outline: none;
+}
+
+.form_button_submit { 
+    padding: 10px 15px;
+    background: #45bfe8;
+    border: 1px solid #0097c9;
+    cursor: pointer;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.form_button_submit:hover {
+    background: #62c8ea;
+    border: 1px solid #2fafd6;
+}

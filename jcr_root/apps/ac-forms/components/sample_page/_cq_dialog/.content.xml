@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Page"
+    sling:resourceType="cq/gui/components/authoring/dialog"
+    extraClientlibs="[cq.mcm.campaign.touch]"
+    mode="edit">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/foundation/container">
+        <items
+            jcr:primaryType="nt:unstructured"
+            sling:hideChildren="tabs">
+            <tabs_new
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/container">
+                <layout
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/foundation/layouts/tabs"
+                    type="nav"/>
+                <items jcr:primaryType="nt:unstructured">
+                    <basic
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/basic"/>
+                    <advanced
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/advanced"/>
+                    <thumbnail
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/thumbnail"/>
+                    <adobe-campaign
+                        cq:showOnCreate="{Boolean}false"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Adobe Campaign"
+                        sling:resourceType="granite/ui/components/foundation/container">
+                        <layout
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="granite/ui/components/foundation/layouts/fixedcolumns"/>
+                        <items jcr:primaryType="nt:unstructured">
+                            <columns
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/foundation/container">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <ac-template
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="mcm/campaign/components/touch-ui/templatepicker"
+                                        fieldLabel="Template"
+                                        labelName="./acTemplateLabel"
+                                        name="./acTemplateId"
+                                        pageSize="{Long}10"
+                                        path="${empty param.item ? requestPathInfo.suffix : param.item}"
+                                        renderReadOnly="{Boolean}true"/>
+                                </items>
+                            </columns>
+                        </items>
+                    </adobe-campaign>
+                    <cloudservices
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/cloudservices"/>
+                    <permissions
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/permissions"/>
+                    <blueprint
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/blueprint"/>
+                    <livecopy
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/foundation/include"
+                        path="foundation/components/page/cq:dialog/content/items/tabs/items/livecopy"/>
+                </items>
+            </tabs_new>
+        </items>
+    </content>
+</jcr:root>

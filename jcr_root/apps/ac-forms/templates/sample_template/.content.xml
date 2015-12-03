@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Template"
+    jcr:title="Adobe Campaign Form Page Template"
+    allowedPaths="[/content/[^/]+(/.*)?]"
+    ranking="{Long}100">
+    <jcr:content
+        cq:designPath="/etc/designs/ac-forms"
+        jcr:primaryType="cq:PageContent"
+        sling:resourceType="ac-forms/components/sample_page"
+        acTemplateId="mail"
+        acTemplateLabel="Email delivery"
+        acMapping="mapRecipient">
+        <par
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="foundation/components/parsys">
+            <start
+                jcr:created="{Date}2015-11-30T12:19:47.217+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-30T12:19:47.217+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mcm/components/cta-form/start"
+                actionType="mcm/campaign/components/form/actions/saveProfile"/>
+            <submit
+                jcr:created="{Date}2015-11-30T12:19:52.632+01:00"
+                jcr:createdBy="admin"
+                jcr:lastModified="{Date}2015-11-30T12:19:52.632+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceSuperType="foundation/components/form/defaults/field"
+                sling:resourceType="mcm/components/cta-form/submit"/>
+            <form_end_1448882387223
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="mcm/components/cta-form/end"/>
+        </par>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:doctype="html_5"
+        cq:lastModified="{Date}2014-07-02T15:23:22.930+03:00"
+        cq:lastModifiedBy="admin"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Adobe Campaign Sample Form Page Design"
+        jcr:uuid="c78338dd-9c0d-4cce-8cd8-e4bc6e6696f1"
+        sling:resourceType="wcm/core/components/designer">
+        <sample_page jcr:primaryType="nt:unstructured">
+            <par
+                jcr:lastModified="2014-03-12T16:07:11.071+01:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="foundation/components/parsys"
+                components="[/libs/mcm/campaign/components/form/profile/checkbox,/libs/mcm/campaign/components/form/profile/date,/libs/mcm/campaign/components/form/profile/date_html5,/libs/mcm/campaign/components/form/profile/encryptedPK,/libs/mcm/campaign/components/form/profile/hiddenRC,/libs/mcm/campaign/components/form/profile/number,/libs/mcm/campaign/components/form/profile/options,/libs/mcm/campaign/components/form/profile/options,/libs/mcm/campaign/components/form/profile/text,/libs/mcm/campaign/components/form/subscriptions/checklist,/libs/mcm/components/cta-form/start,/libs/mcm/components/cta-form/submit]"/>
+            <clientcontext
+                jcr:lastModified="{Date}2013-05-14T16:00:55.000+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/clientcontext"
+                path="/etc/clientcontext/campaign"
+                segmentPath="/etc/segmentation/geometrixx-outdoors"/>
+            <config
+                jcr:lastModified="{Date}2013-05-14T16:00:55.000+02:00"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/personalization/components/clientcontext/config"
+                path="/etc/clientcontext/campaign"/>
+        </sample_page>
+    </jcr:content>
+    <static.css/>
+</jcr:root>
